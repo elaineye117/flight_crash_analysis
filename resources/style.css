@@ -12,7 +12,7 @@ body{
   margin: 0;
   padding: 0;
 }
-header{
+.page-header{
   width: 60%;
   margin: 0 auto;
   padding-bottom: 500px;
@@ -20,8 +20,8 @@ header{
 #main{
   font-size: 60px;
   line-height: 1;
-  padding: 50px 0;
-  padding-top: 100px;
+  padding: 30px 0;
+  padding-top:100px;
   text-align: left;
   color: black;
   font-weight: bold;
@@ -41,7 +41,7 @@ h1{
   text-align: left;
   line-height:30px;
   font-size: 20px;
-  padding: 50px 0px  100px 0px;
+  padding: 50px 0px  50px 0px;
   font-family: 'Libre Baskerville', serif;
 }
 
@@ -66,6 +66,22 @@ h3{
   color: black;
   font-weight: bold;
   font-family: 'Libre Baskerville', serif;
+}
+#map-container{
+  height: 700px;
+  width: 90%;
+  padding-left:5%;
+}
+#map-div {
+  width: 100%;
+  height: 700px;
+  padding-top: 20px;
+}
+#time-slider {
+  width: 50%;
+  left: 25%;
+  position: relative;
+  top: 550px;
 }
 .finding_image_one p{
   text-align: left;
@@ -158,7 +174,7 @@ h3{
   height: 40px;
   padding: 0px;
   color: black;
-  background: #fff8ed;
+  background: #c8c8c8;
   -webkit-backdrop-filter: blur(10px);
   text-align: center;
   border-bottom-color: tomato;
@@ -248,7 +264,7 @@ footer{
 #reference li{
   font-family: 'Libre Baskerville', serif;
 }
-header{
+#main{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
