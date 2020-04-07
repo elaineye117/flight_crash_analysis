@@ -75,6 +75,7 @@
   <p>
     placeholder
   </p>
+  <div id="when-vis"></div>
 </div>
 
 <div id="cause" class="finding_image_one">
@@ -120,15 +121,15 @@
 </footer>
 
 <script type="text/javascript">
-  var f = "resources/fatality_vis.json";
-  vegaEmbed('#fatality-vis', f).then(function(result) {
+  var plot_f = "resources/fatality_vis.json";
+  vegaEmbed('#fatality-vis', plot_f).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  var plot_when = "resources/time_chart.json";
+  vegaEmbed('#when-vis', plot_when).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   /*
-  var plot_time = "plots/parties_time.json";
-  vegaEmbed('#vis2', plot_time).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
   var plot_grades = "plots/plot_grades.json";
   vegaEmbed('#vis3', plot_grades).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
