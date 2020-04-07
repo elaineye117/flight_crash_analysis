@@ -158,11 +158,11 @@ h3{
   height: 40px;
   padding: 0px;
   color: black;
-  /* background: blanchedalmond; */
+  background: #fff8ed;
   -webkit-backdrop-filter: blur(10px);
   text-align: center;
   border-bottom-color: tomato;
-  
+
 }
 .navigation ul{
   padding: 10px;
@@ -170,7 +170,7 @@ h3{
   bottom: 0;
   list-style-type: none;
 
-  
+
 }
 
 .navigation li{
@@ -221,6 +221,7 @@ footer{
   width: 100%;
   color: white;
   padding:15px;
+  line-height: 1.5;
   text-align: center;
   font-family: 'Libre Baskerville', serif;
 }
@@ -244,7 +245,7 @@ footer{
   margin: 0 auto;
   margin-bottom: 30px;
 }
-#reference li{ 
+#reference li{
   font-family: 'Libre Baskerville', serif;
 }
 header{
@@ -253,7 +254,6 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  height: 200px;
   /* padding-bottom: 400px; */
 }
 
@@ -287,11 +287,11 @@ header p{
   width: 60%;
   margin: 0 auto;
 }
-object{ 
+object{
   width: 1000px;
   height: 500px;
 
-}  
+}
 
 .conclusion{
   text-align: center;
@@ -316,4 +316,28 @@ object{
   .skip a:focus{
     top:0;
   }
+}
+
+/* Shrink the header margin for smaller screens */
+@media only screen and (max-width: 1130px) {
+  .navigation li{
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .navigation li{
+    padding: 3px;
+  }
+  .navigation a {
+    margin: 5px;
+  }
+}
+@media only screen and (max-width: 585px) {
+  .navigation a {
+    margin: 15px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+
 }
