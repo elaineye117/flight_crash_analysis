@@ -41,6 +41,21 @@
     causes of accidents? And finally, if I'm in a crash, how likely am I to survive?
   </p>
 
+  <div class="row">
+    <div class="column">
+      <img src="resources/where.png" alt="where" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="resources/when.png" alt="when" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="resources/causes.png" alt="causes" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="resources/survival.png" alt="survival" style="width:100%">
+    </div>
+  </div>
+
 </header>
 
 
@@ -86,9 +101,7 @@
 <div id='visc'></div>
 <h3>Key Findings</h3>
 <div class="finding_image_one">
-  <p>
-    placeholder
-  </p>
+<p>placeholder</p>
 </div>
 
 <div class="survival" id ='survival'></div>
@@ -96,7 +109,7 @@
 <div class="finding_image_one">
   <p> What is the survival rate in crashes and how has this changed over time?</p>
   <br>
-<div id="fatality-vis"></div>
+<div id="survival-vis"></div>
 </div>
 
 <div class="conclusion" id ='conclusion'></div>
@@ -110,7 +123,7 @@
 <h2>Reference</h2>
 <div id="reference">
   <ul>
-    <li>FiftyThirtyEight</li>
+    <li>Kaggle</li>
   </ul>
 
 </div>
@@ -121,20 +134,20 @@
 </footer>
 
 <script type="text/javascript">
-  var plot_f = "resources/fatality_vis.json";
-  vegaEmbed('#fatality-vis', plot_f).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
+  // var plot_f = "resources/fatality_vis.json";
+  // vegaEmbed('#fatality-vis', plot_f).then(function(result) {
+  //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  // }).catch(console.error);
   var plot_when = "resources/time_chart.json";
   vegaEmbed('#when-vis', plot_when).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-  /*
-  var plot_grades = "plots/plot_grades.json";
-  vegaEmbed('#vis3', plot_grades).then(function(result) {
+  
+  var plot_survival = "resources/survival.json";
+  vegaEmbed('#survival-vis', plot_survival).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-  */
+  
 </script>
 </body>
 </html>

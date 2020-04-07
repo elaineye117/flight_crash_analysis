@@ -36,7 +36,14 @@ h1{
   font-weight: bold;
   font-family: 'Libre Baskerville', serif;
 }
+.row {
+  display: flex;
+}
 
+.column {
+  flex: 25%;
+  padding: 50px;
+}
 #main p {
   text-align: left;
   line-height:30px;
