@@ -98,6 +98,10 @@ h3{
   font-family: 'Libre Baskerville', serif;
 
 }
+
+.tableauPlaceholder {
+margin: auto;
+}
 .finding_image_one ul li{
   text-align: left;
   line-height:30px;
