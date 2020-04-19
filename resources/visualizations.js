@@ -185,6 +185,9 @@ require([
         center: [0, 0],
         ui: {
             components: ["compass", "zoom"]
+        },
+        navigation: {
+            mouseWheelZoomEnabled: false
         }
 
     });
