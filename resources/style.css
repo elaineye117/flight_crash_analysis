@@ -57,7 +57,7 @@ h2{
   margin: 0 auto;
   font-size: 30px;
   line-height: 1;
-  padding: 200px 0px 100px;
+  padding: 50px 0px 20px;
   text-align: left;
   color: black;
   font-weight: bold;
@@ -68,7 +68,7 @@ h3{
   margin: 0 auto;
   font-size: 22px;
   line-height: 1;
-  padding: 50px 0;
+  padding: 20px;
   text-align: center;
   color: black;
   font-weight: bold;
@@ -196,7 +196,7 @@ margin: auto;
   -webkit-backdrop-filter: blur(10px);
   text-align: center;
   border-bottom-color: tomato;
-
+  z-index: 1;
 }
 .navigation ul{
   padding: 10px;
